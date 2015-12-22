@@ -5,18 +5,45 @@
     <title>Title</title>
     <link rel = "stylesheet" href="https://dn-stk.qbox.me/css/zTreeStyle.css" type="text/css">
 
-
+    <style>
+  	body {
+  	background-color: white;
+  	margin:30; padding:0;
+  	text-align: center;
+  	}
+  	div, p, table, th, td {
+  		list-style:none;
+  		margin:0; padding:0;
+  		color:#333; font-size:12px;
+  		font-family:dotum, Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+  	}
+  	.ztree li a.curSelectedNode {
+  		padding-top: 0px;
+  		background-color: #FFE6B0;
+  		color: black;
+  		height: 16px;
+  		border: 1px #FFB951 solid;
+  		opacity: 0.8;
+  	}
+  	.ztree{
+  		overflow: auto;
+  		height:100%;
+  		min-height: 200px;
+  		top: 0px;
+  	}
+    </style>
     <script src="https://dn-stk.qbox.me/js/MD5.js"></script>
-    <script>
+    
+    <!-- <script>
         loopy();
         function loopy() {
             var key = "";
-            while (MD5(key) != MD5("123")) {//初始密码123
+            while (MD5(key) != "202cb962ac59075b964b07152d234b70") {//初始密码123
                 key = prompt("输入正确密码才能登陆!");
             }
             alert("登陆成功！");
         }
-    </script>
+    </script> -->
 
     <script type="text/javascript" src="https://dn-stk.qbox.me/js/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="https://dn-stk.qbox.me/js/jquery.ztree.core-3.5.js"></script>
